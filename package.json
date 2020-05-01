@@ -18,15 +18,19 @@
     "redux-form": "^7.1.1",
     "redux-saga": "^0.15.6",
     "redux-thunk": "^2.2.0",
-    "siema": "^1.4.6"
+    "siema": "^1.4.6",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "redux-devtools": "^3.4.0"
-  }
+  },
+  "snyk": true
 }
